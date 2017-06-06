@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: "微软雅黑";
+    line-height: 1.5;
+    font-weight:bold;
+    overflow-y: scroll;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.footer{
+  background-color:#404040;
+  font-size:15px;
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter .fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-leave {
+  opacity: 1;
+}
+
+.fade-leave .fade-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}
+

@@ -1,0 +1,91 @@
+$headerFontColor : #108ee9;
+$subeInfoColor:#aaaaaa;
+$commentBasicInfoColor:#7f7f7f;
+
+@mixin title{
+	color:$headerFontColor;
+	font-size:20px;
+}
+
+@mixin comment_basic_info{
+	color:$commentBasicInfoColor;
+	//font-size:13px;
+}
+
+.detail{
+	padding:50px 80px 20px 80px;
+	font-size: 15px;
+	font-family: "微软雅黑";
+	font-weight:bold;
+	line-height: 1.5;
+	.title{
+		margin: 0 auto;
+		text-align:center;
+		color:$headerFontColor;
+		font-size:30px;
+	}
+	.category{
+		margin:10px 20px;
+		color:$subeInfoColor;
+		float:left;
+	}
+	.author{
+		margin:10px 20px;
+		color:$subeInfoColor;
+		float:left;
+	}
+	.date{
+		margin:10px 10px;
+		color:$subeInfoColor;
+		float:right;
+	}
+	.has_pic{
+		clear:both;
+		overflow-x:hidden;
+		width:100%;
+		word-break:break-all;
+
+		.picture{
+			float:right;
+			width:150px;
+			height:150px;
+		}
+	}
+	.has_no_pic{
+		clear:both;
+	}
+
+	.gap{
+		padding:10px 0 10px 0;
+	}
+
+	.commented{
+		//margin-bottom:10px;
+		.title{
+			@include title;
+		}
+		.comment_container{
+			font-family: "宋体";
+			margin:8px 0 8px 0;
+			.comment_title{
+				float:left;
+				@include comment_basic_info;
+			}
+			.comment_no{
+				float:right;
+				margin-right:20px;
+				@include comment_basic_info;
+			}
+			.comment_body{
+				clear:both;
+				//font-weight:none;
+			}
+		}
+	}
+
+	.to_be_commenting{
+		.title{
+			@include title;
+		}
+	}
+}

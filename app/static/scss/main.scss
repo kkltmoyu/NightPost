@@ -1,0 +1,72 @@
+.main{
+  padding:20px 50px 0px 50px;
+  font-size: 14px;
+  font-family: "微软雅黑";
+  font-weight:bold;
+  line-height: 1.5;
+
+  .post {
+  	margin-bottom: 20px;
+      border-bottom:1px black solid; 
+      border-right:1px black solid; 
+  	  //font-family: "Droid Sans", Arial, sans-serif;
+    	display: block;
+    	width: 100%;
+    	position: relative;
+    	overflow: hidden;
+    	z-index: 9;
+    	bottom: 0;
+    	-webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
+    	-moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
+    	-ms-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
+    	-o-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
+    	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
+    	-webkit-border-radius: 10px;
+    	-moz-border-radius: 10px;
+    	-ms-border-radius: 10px;
+    	border-radius: 10px;
+    	-webkit-transition: 0.3s;
+    	-o-transition: 0.3s;
+    	transition: 0.3s;
+
+      .title{
+        float:left;
+        padding:2px 0 0 10px;
+        font-size:20px
+      }
+      .author{
+        float:right;
+        padding:2px 10px 0 0;
+      }
+      .content{
+        clear:both;
+        padding:10px 20px 10px 20px;
+      }
+      .category{
+        float:left;
+        padding:2px 0 0 10px;
+      }
+      .date{
+        float:right;
+        padding:2px 10px 0 0;
+      }
+  }
+
+  .post:hover, .post:focus {
+    bottom: 7px;
+    text-decoration: none;
+    -webkit-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
+    -ms-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
+    -o-box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.19);
+    box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.50);
+  }
+}
+
+
+.not_found{
+  color:#108ee9;
+  margin: 100px auto;
+  text-align:center;
+  font-size:30px;
+}
