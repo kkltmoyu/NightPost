@@ -27,8 +27,7 @@ class Comment extends Component{
         message.warning('未登录不能发表评论，请先登录');
         return;
       }
-     
-      console.log('Comment handleSubmit values of form: ', values);
+      //console.log('Comment handleSubmit values of form: ', values);
     });
   }
   render() {
