@@ -63,7 +63,7 @@ class RecordPost extends React.Component {
     var filePath = file.value;
     if(filePath.indexOf("jpg")!=-1 || filePath.indexOf("png")!=-1|| filePath.indexOf("gif")!=-1|| filePath.indexOf("bmp")!=-1){
       if (file.files && file.files[0]) {
-        if((file.files[0].size/1024)>512){
+        if((file.files[0].size/1024)>4096){
           this.setState({
             tips:'上传文件不能超过4MB!请重新选择文件',
           });
