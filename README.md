@@ -4,11 +4,12 @@
 
 ## 关键技术
 * 1.前端
-	>ReactJS-15.5 + React-router-4 + redux + react-redux + antd组件库 + recharts-1.0 + ES6 + webpack + sass + redux DEVTOOLS（默认关闭，需要请在index.js中取消注释）
+	>ReactJS-15.5 + React-router-4 + redux + react-redux + antd组件库 + recharts-1.0 + ES6 + webpack + sass + redux DEVTOOLS（默认关闭，需要请在index.js中取消注释）<br/>
+	其中antd组件与recharts库均已配置为按需加载
 * 2.后端
 	>NodeJS + express4 + MongoDB（MongoDB未集成在工程中请自行安装）<br/>
 	前后端完全分离<br/>
-	其中antd组件与recharts库均已配置为按需加载
+	
 
 ## 项目开发
 开发阶段采用nodeJS 7.9,前端调试使用chrom 51，后端nodeJS调试使用devtool
@@ -33,10 +34,11 @@ This is a post-bar-project for Web,you can publish your topics ,query your topic
 
 ## Major knowledge used:
 * 1.front-end development
-	>ReactJS-15.5 + React-router-4 + redux + react-redux + antd lib + recharts-1.0 + ES6 + webpack + sass + redux DEVTOOLS（closed default，you can open it in index.js）
+	>ReactJS-15.5 + React-router-4 + redux + react-redux + antd lib + recharts-1.0 + ES6 + webpack + sass + redux DEVTOOLS（closed default，you can open it in index.js）<br/>
+	antd lib and recharts lib is set to just load what they need.
 * 2.server
 	>NodeJS + express4 + MongoDB（you need to intall MongoDB by yourself）<br/>
-	antd lib and recharts lib is set to just load what they need.
+	
 
 ## In development stage
 	I use nodeJS 7.9 for server environment,the front-end's debugger uses chrom 51，server's debugger uses devtool
