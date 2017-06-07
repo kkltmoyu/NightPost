@@ -4,8 +4,6 @@ import {connect} from 'react-redux'
 import { bindActionCreators } from 'redux'
 import * as actions from '../actions/index'
 
-// import '../static/scss/modalDialog.scss';
-
 import { Form, Input, Button,Col,Row,message } from 'antd';
 const FormItem = Form.Item;
 
