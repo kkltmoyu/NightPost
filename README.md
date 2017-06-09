@@ -28,6 +28,10 @@
 ##### 生产环境:
     npm run dist
 
+![NightPost](https://raw.githubusercontent.com/kkltmoyu/night/master/main.PNG) 
+![NightPost](https://raw.githubusercontent.com/kkltmoyu/night/master/tongji.PNG) 
+
+
 # In English
 
 This is a post-bar-project for Web,you can publish your topics ,query your topics,submit your comment,user register login and logout,it will generate your statistical chart automatically.This project is built by ReactJs stack + NodeJS + MongoDB.Actually you can use the project as your startkit or biolerplate if you want.
