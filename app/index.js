@@ -1,4 +1,4 @@
-import 'fetch-ie8';
+//import 'fetch-ie8';
 import 'es5-shim';
 import 'es5-shim/es5-sham';
 import 'es6-shim';
@@ -17,14 +17,15 @@ import Main from 'containers/Main'
 import Stat from 'components/Stat'
 import Detail from 'components/Detail'
 import NoMatch from 'components/Page404'
-import DevTools from './containers/DevTools'
+
+//import DevTools from './containers/DevTools'
 
 import myCreateStores from './store'
 const browserHistory = createHistory()
 
 import { CSSTransitionGroup } from 'react-transition-group'
 
-import { Button,Layout } from 'antd'
+import { Layout } from 'antd'
 const { Content, Footer } = Layout
 
 import Header from './components/Header'

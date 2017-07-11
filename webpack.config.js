@@ -7,7 +7,9 @@ var CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin;
 var prod = process.env.NODE_ENV === 'production' ? true : false;
 
 module.exports = {
-    entry: { index: './app/index.js' },
+    entry: { index: './app/index.js',
+        vendor: ['react', 'react-dom', 'react-router','react-router-dom'] 
+    },
     output: {
         path: path.resolve(__dirname, prod ? "./dist" : "./build"), //静态资源会再这目录下
         filename: prod ? "js/[name].[hash].min.js" : "js/[name].js",
@@ -18,6 +20,10 @@ module.exports = {
         extensions: ['', '.js', '.scss', '.css', '.png', '.jpg'], //第一个是空字符串! 对应不需要后缀的情况.
         root: path.resolve('./app'),
     },
+    // externals: {
+    //     'react': 'react',
+    //     'react-dom': 'ReactDOM'
+    // },
     module: {
         loaders: [{
             test: /\.jsx?$/,
@@ -66,6 +72,7 @@ module.exports = {
             'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
         }),
         new ExtractTextPlugin("style.css"), //提取出来的样式放在style.css文件中
+        new webpack.optimize.CommonsChunkPlugin('vendor',  'vendor.js'),
     ],
     devServer: {
         port: 7000,
@@ -84,6 +91,9 @@ if (prod) {
     module.exports.plugins = (module.exports.plugins || [])
         .concat([
             new webpack.optimize.UglifyJsPlugin({
+                output: {
+                    comments: false,  // remove all comments
+                },
                 compress: {
                     warnings: false,
                     //drop_debugger: true,
@@ -99,7 +109,7 @@ if (prod) {
                 minChunks: Infinity
             }),
         ]);
-    //module.exports.devtool = 'source-map';
+    module.exports.devtool = false;
 } else {
     module.exports.devtool = 'eval-source-map';
     module.exports.plugins = (module.exports.plugins || [])
