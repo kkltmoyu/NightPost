@@ -84,7 +84,8 @@ module.exports = {
         },
         plugins: [
             new webpack.HotModuleReplacementPlugin()
-        ]
+        ],
+        inline:true,
     }
 }
 if (prod) {

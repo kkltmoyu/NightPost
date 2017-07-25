@@ -8,7 +8,7 @@ import ReactDOM from 'react-dom'
 import { createStore, combineReducers,applyMiddleware} from 'redux'
 import { Provider } from 'react-redux'
 import createHistory from 'history/createBrowserHistory'
-import { BrowserRouter as Router,Route,Link,Switch} from 'react-router-dom'
+import { HashRouter as Router,Route,Link,Switch} from 'react-router-dom'
 import {syncHistoryWithStore} from 'react-router-redux'
 import  * as reducers from './reducers/index' // Or wherever you keep your reducers
 
